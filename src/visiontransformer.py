@@ -1,6 +1,7 @@
 """
 Base ViT Model
 """
+from utils import img_to_patch
 from torch import nn
 class VisionTransformer(nn.Module):
 
