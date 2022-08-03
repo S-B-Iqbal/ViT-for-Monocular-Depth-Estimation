@@ -58,3 +58,13 @@ def align_depth(original,predicted):
     aligned_image = (predicted -t)/s
 
     return aligned_image
+
+def img_to_patch(x, patch_size, flatten_channel=True):
+    """create patches of images"""
+    B,C,H,W = x.shape
+    x = x.reshape(B, C, H//patch_size, patch_size, W//patch_size, patch_size)
+    x = x.permute(0,2,4,1,3,5)
+    x = x.flatten(1,2)
+    if flatten_channel:
+        x = x.flatten(2,4)
+    return x
