@@ -1,8 +1,15 @@
-# ViT for Monocular Depth Estimation
-Vision Transformers-relative and absolute depth estimation
+# ViT for Monocular Depth Estimation    
+
+Vision Transformers-relative and absolute depth estimation    
+    
 ## Usage
 
-1. Place images in the [`input`](vit_for_depth_estimation/input) folder.
+1. Images can be manually transferred to [`input`](vit_for_depth_estimation/input) folder or be downloaded from DuckDuckGo API using the script:
+
+
+```shell
+python fetch_sample_images.py -i <search image> -u <no. of urls>
+``` 
 
 2. Select one of the four models:
     - `DPT_Large`: Largest model 
@@ -37,7 +44,11 @@ python inference.py -i ../input -o ../output -t <model_name> -a true
 
 4. Output
 
-- Results are saved in [`output`](vit_for_depth_estimation/output) folder in png format.
+- Results are saved in [`output`](vit_for_depth_estimation/output) folder in png format. Output for any random image can be visualized using the script:
+
+```shell
+python plot.py
+``` 
 
 
 ## NOTE:
