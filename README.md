@@ -34,7 +34,7 @@ python inference.py -i ../input -o ../output -t MiDaS_small
 ```
 4. Absolute Depth Estimation
 
-The models perform relative depth estimation. To approximately estimate absolute depth, method prescribed in Section-5 of the [paper](https://arxiv.org/pdf/1907.01341.pdf) has been implemented using . Also have a look at the following issues: [#36](https://github.com/isl-org/MiDaS/issues/36), [#37](https://github.com/isl-org/MiDaS/issues/37), [#42](https://github.com/isl-org/MiDaS/issues/42), [#63](https://github.com/isl-org/MiDaS/issues/63), [#148](https://github.com/isl-org/MiDaS/issues/148), [#171](https://github.com/isl-org/MiDaS/issues/171).    
+The models perform relative depth estimation. To approximately estimate absolute depth, method prescribed in Section-5 of the [paper](https://arxiv.org/pdf/1907.01341.pdf) has been implemented using [depth-alignnment](https://github.com/S-B-Iqbal/ViT-for-Monocular-Depth-Estimation/blob/85bbc01ab50db06a9690d4a3669a01c4e7d1264f/src/utils.py#L46). Also have a look at the following issues: [#36](https://github.com/isl-org/MiDaS/issues/36), [#37](https://github.com/isl-org/MiDaS/issues/37), [#42](https://github.com/isl-org/MiDaS/issues/42), [#63](https://github.com/isl-org/MiDaS/issues/63), [#148](https://github.com/isl-org/MiDaS/issues/148), [#171](https://github.com/isl-org/MiDaS/issues/171).    
 
 To perform absolute depth estimation, use the below script. 
 
